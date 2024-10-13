@@ -4,13 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-ngx-server-check',
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      ngx-server-check works!
-    </p>
-  `,
-  styles: ``
+  templateUrl: 'ngx-server-check.component.html',
+  styleUrl: 'ngx-server-check.component.html'
 })
-export class NgxServerCheckComponent {
-
-}
+export class NgxServerCheckComponent {}
