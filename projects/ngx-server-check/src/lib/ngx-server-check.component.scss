@@ -1,0 +1,70 @@
+  .url-status-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+  }
+  
+  .url-status-table th, .url-status-table td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    position: relative;
+  }
+
+  tr:nth-child(even) {
+    background: #ffffff;
+  }
+  
+   tr:nth-child(odd) {
+    background: #e9eee9;
+  }
+  
+  .url-status-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .status-ok {
+    background-color: lightgreen;
+  }
+  
+  .status-error {
+    background-color: lightcoral;
+  }
+  
+  .tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 100;
+    white-space: nowrap;
+    font-size: 0.8em;
+  }
+  
+  .status-error:hover .tooltip {
+    display: block;
+  }
+  
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+  
+  @media (max-width: 768px) {
+    .url-status-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
