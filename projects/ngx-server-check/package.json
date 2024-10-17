@@ -1,6 +1,6 @@
 {
   "name": "ngx-server-check",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ngx-server-check is a package that takes a list of api endpoints as input and displays a user-friendly UI showing the status of each API, along with error messages for any failures. It also includes several useful features.",
   "homepage": "https://stackblitz.com/edit/sngx-server-check-demo?file=package.json",
   "repository": {
