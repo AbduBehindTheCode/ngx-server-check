@@ -1,1 +1,23 @@
-test
+<h2 style="text-align: center;">Servers Status Check</h2>
+
+<table class="url-status-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>URL</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let status of apiStatus">
+      <td>{{ status.name }}</td>
+      <td>{{ status.url }}</td>
+      <td 
+          [ngClass]="{'status-ok': status.status === 200, 'status-error': status.status !== 200}" 
+          [attr.title]="status.error ? 'Error ' + status.status + ': ' + status.error : ''" 
+      >
+        {{ status.status === 200 ? '200 OK' : 'Error' }}
+      </td>
+    </tr>
+  </tbody>
+</table>

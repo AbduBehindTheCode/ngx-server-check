@@ -2,6 +2,11 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
 
+
+## Demo
+
+Live demo is available on [Ngx-server-check](https://stackblitz.com/edit/sngx-server-check-demo?file=package.json).
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project ngx-server-check` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-server-check`.
